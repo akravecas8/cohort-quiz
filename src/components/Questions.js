@@ -8,7 +8,7 @@ export default class Questions extends Component {
             <div>
                <p>We have questions</p> 
                <Answer />
-               <NextButton />
+               <NextButton setRandomQuestion={this.props.setRandomQuestion} />
             </div>
         )
     }
