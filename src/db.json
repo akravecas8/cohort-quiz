@@ -1,0 +1,103 @@
+{
+    "Questions": [
+      {
+        "id": 1,
+        "question": "Who is most likely to name their variable 'Pizza'?",
+        "answer1": "David",
+        "answer2": "Sean",
+        "answer3": "Eni",
+        "answer4": "Adam",
+        "correctanswer": "answer1"
+      },
+      {
+        "id": 2,
+        "question": "Who went to nursing school?",
+        "answer1": "Shiraf",
+        "answer2": "Eni",
+        "answer3": "Laura",
+        "answer4": "Marcus",
+        "correctanswer": "answer2"
+      },
+      {
+        "id": 3,
+        "question": "Who owns (and wears to class) a sweathshirt that says KALE...not YALE?",
+        "answer1": "Laura",
+        "answer2": "Amy",
+        "answer3": "Brenna",
+        "answer4": "James",
+        "correctanswer": "answer3"
+      },
+      {
+        "id": 4,
+        "question": "Who is most likely to be good at cappuccino foam art?",
+        "answer1": "David",
+        "answer2": "Alex",
+        "answer3": "Eni",
+        "answer4": "James",
+        "correctanswer": "answer4"
+      },
+      {
+        "id": 5,
+        "question": "Who likes animae more than Adam?",
+        "answer1": "Marcus",
+        "answer2": "Sean",
+        "answer3": "Brenna",
+        "answer4": "Shiraf",
+        "correctanswer": "answer1"
+      },
+      {
+        "id": 6,
+        "question": "Who is learning Arabic?",
+        "answer1": "Shiraf",
+        "answer2": "Laura",
+        "answer3": "Eni",
+        "answer4": "David",
+        "correctanswer": "answer2"
+      },
+      {
+        "id": 7,
+        "question": "Who recently moved and lost internet for a few days?",
+        "answer1": "Marcus",
+        "answer2": "James",
+        "answer3": "Shiraf",
+        "answer4": "Amy",
+        "correctanswer": "answer3"
+      },
+      {
+        "id": 8,
+        "question": "Who lost Alex money with bad (HORRIBLE!!!) stock advice?",
+        "answer1": "David",
+        "answer2": "Amy",
+        "answer3": "Brenna",
+        "answer4": "Sean",
+        "correctanswer": "answer4"
+      },
+      {
+        "id": 9,
+        "question": "Who got kicked out of their partner's parents' house?",
+        "answer1": "Adam",
+        "answer2": "Alex",
+        "answer3": "Laura",
+        "answer4": "Amy",
+        "correctanswer": "answer1"
+      },
+      {
+        "id": 10,
+        "question": "Who is most likely to ask stupid questions?",
+        "answer1": "Shiraf",
+        "answer2": "Alex",
+        "answer3": "James",
+        "answer4": "Brenna",
+        "correctanswer": "answer2"
+      },
+      {
+        "id": 11,
+        "question": "Who got engaged in Freiburg, Germany?",
+        "answer1": "Eni",
+        "answer2": "Brenna",
+        "answer3": "Amy",
+        "answer4": "Shiraf",
+        "correctanswer": "answer3"
+      }
+    ]
+}
