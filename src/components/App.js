@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />        
+        <img id = "imgs" src={logo} className="App-logo" alt="logo" />
+        <span id = "quiztitle">THE COHORT QUIZ</span>     
       </header>
       <MainContainer />
     </div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Questions from "./QuestionContainer";
 import Profile from "./Profile";
+import NextButton from "./NextButton";
 
 export default class MainContainer extends Component {
   state = {
@@ -21,7 +22,7 @@ export default class MainContainer extends Component {
   }
 
   setCorrect = () => {
-    this.setState({ correct: true });
+    this.setState({ score: this.state.score + 1 });
   };
 
   setRandomQuestion = () => {
@@ -38,13 +39,12 @@ export default class MainContainer extends Component {
   render() {
     return (
       <div className = "maincont">
+        <Profile/>
         <p>This is a quiz</p>
-        <Questions
-          quizData={this.state.quizData}
-          id={this.state.id}
-          setCorrect={this.setCorrect}
-        />
-        <Profile />
+        <div className = "test">
+        <Questions quizData={this.state.quizData} id={this.state.id} setCorrect={this.setCorrect}/>
+        </div>
+        <div className ="button"><NextButton /></div>
       </div>
     );
   }
