@@ -4,7 +4,7 @@ export default class Answer extends Component {
     render() {
         return (
             <div>
-                <span>There are answers</span>
+                
             </div>
         )
     }
