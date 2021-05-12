@@ -6,6 +6,7 @@
   height: 10vmin;
   pointer-events: none;
   border-radius: 50%;
+  align-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,12 +15,11 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 11vh;
   display: flex;
-  align-items: center;
-  justify-content: left;
   padding-left: 1em;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -61,4 +61,10 @@ main
 .listy {
   padding: .25em;
   border: 10 px solid black
+}
+
+#quiztitle {
+  color: lightgray;
+  padding: 1em;
+  text-align: right;
 }
