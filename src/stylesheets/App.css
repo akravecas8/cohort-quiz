@@ -37,3 +37,23 @@
     transform: rotate(360deg);
   }
 }
+
+.question {
+  height: auto;
+  width: auto;
+  background-color: darkblue;
+}
+
+.answers {
+  height:auto;
+  width: auto;
+  text-align: left;
+  background-color: lightslategrey;
+}
+
+.questholder {
+  height: 1000 em;
+  width: 1000 em;
+  background-color: purple;
+}
+

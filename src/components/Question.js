@@ -9,8 +9,10 @@ const Question = (props) => {
 
   return (
     <Fragment>
+    <div className = "questholder">
       <div className="question">
         <span>{question}</span>
+      </div>
         <div className="answers">
           {answers.map((answer, idx) => (
             <p
@@ -23,7 +25,7 @@ const Question = (props) => {
             </p>
           ))}
         </div>
-      </div>
+    </div>
     </Fragment>
   );
 };
