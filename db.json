@@ -1,0 +1,70 @@
+{
+    "Questions": [
+      {
+        "id": 1,
+        "question": "Who is most likely to name their variable 'Pizza'?",
+        "answers": ["David", "Sean", "Eni", "Adam"],
+        "correctanswer": "David"
+      },
+      {
+        "id": 2,
+        "question": "Who went to nursing school?",
+        "answers": ["Shiraf", "Eni", "Laura", "Marcus"],
+        "correctanswer": "Eni"
+      },
+      {
+        "id": 3,
+        "question": "Who owns (and wears to class) a sweathshirt that says KALE?",
+        "answers": ["Laura", "Amy", "Brenna", "James"],
+        "correctanswer": "Brenna"
+      },
+      {
+        "id": 4,
+        "question": "Who is most likely to be good at cappuccino foam art?",
+        "answers": ["David", "Alex", "Eni", "James"],
+        "correctanswer": "James"
+      },
+      {
+        "id": 5,
+        "question": "Who likes animae more than Adam?",
+        "answers": ["Marcus", "Sean", "Brenna", "Shiraf"],
+        "correctanswer": "Marcus"
+      },
+      {
+        "id": 6,
+        "question": "Who is learning Arabic?",
+        "answers": ["Shiraf", "Laura", "Eni", "David"],
+        "correctanswer": "Laura"
+      },
+      {
+        "id": 7,
+        "question": "Who recently moved and lost their internet?",
+        "answers": ["Marcus", "James", "Shiraf", "Amy"],
+        "correctanswer": "Shiraf"
+      },
+      {
+        "id": 8,
+        "question": "Who cost Alex money with bad (HORRIBLE!!!) stock advice?",
+        "answers": ["David", "Amy", "Brenna", "Sean"],
+        "correctanswer": "Sean"
+      },
+      {
+        "id": 9,
+        "question": "Who got kicked out of their partner's parents' house?",
+        "answers": ["Adam", "Alex", "Laura", "Amy"],
+        "correctanswer": "Adam"
+      },
+      {
+        "id": 10,
+        "question": "Who is most likely to ask too many dumb questions?",
+        "answers": ["Shiraf", "Alex", "James", "Brenna"],
+        "correctanswer": "Alex"
+      },
+      {
+        "id": 11,
+        "question": "Who got engaged in Freiburg, Germany?",
+        "answer1": ["Eni", "Brenna", "Amy", "Shiraf"],
+        "correctanswer": "Amy"
+      }
+    ]
+}
