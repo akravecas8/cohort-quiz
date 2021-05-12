@@ -14,17 +14,8 @@ const Question = (props) => {
         <span>{question}</span>
       </div>
       <div className="answers">
-        {answers.map((answer, idx) => (
-          <p
-            key={idx}
-            onClick={() =>
-               answer === correctanswer ? props.setCorrect() : ""
-            }
-          >
-              {answer}
-            </p>
-          ))}
-        </div>
+        {answers.map((answer, idx) => (<ul><li className = "listy"><p key={idx} onClick={() => answer === correctanswer ? props.setCorrect() : ""}>{answer}</p></li></ul>))}
+      </div>
     </div>
     </Fragment>
   );

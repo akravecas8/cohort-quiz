@@ -21,7 +21,7 @@ export default class MainContainer extends Component {
   }
 
   setCorrect = () => {
-    this.setState({ correct: true });
+    this.setState({ score: this.state.score + 1 });
   };
 
   setRandomQuestion = () => {
