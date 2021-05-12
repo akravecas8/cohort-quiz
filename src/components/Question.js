@@ -13,14 +13,14 @@ const Question = (props) => {
       <div className="question">
         <span>{question}</span>
       </div>
-        <div className="answers">
-          {answers.map((answer, idx) => (
-            <p
-              key={idx}
-              onClick={() =>
-                answer === correctanswer ? props.setCorrect() : ""
-              }
-            >
+      <div className="answers">
+        {answers.map((answer, idx) => (
+          <p
+            key={idx}
+            onClick={() =>
+               answer === correctanswer ? props.setCorrect() : ""
+            }
+          >
               {answer}
             </p>
           ))}
