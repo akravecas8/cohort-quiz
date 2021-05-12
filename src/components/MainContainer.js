@@ -37,7 +37,7 @@ export default class MainContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className = "maincont">
         <p>This is a quiz</p>
         <Questions
           quizData={this.state.quizData}
