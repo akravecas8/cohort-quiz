@@ -1,6 +1,6 @@
 import logo from './DC.jpeg';
-import './App.css';
-import MainContainer from './components/MainContainer'
+import '../stylesheets/App.css';
+import MainContainer from './MainContainer'
 
 function App() {
   return (

@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.answers {
+  height: 50px;
+  width: 50px;
+  border: 3em;
+  border-color: aquamarine;
+}

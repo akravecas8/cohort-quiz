@@ -24,9 +24,16 @@ export default class MainContainer extends Component {
     this.setState({ correct: true });
   };
 
-  setRandomQuestion = (randomQuestion) => {
-    this.setState({ question: randomQuestion });
-  };
+  setRandomQuestion = () => {
+    const y = Math.floor(Math.random()*this.state.quizData.length)
+    let i = 0;
+    if (this.state.idSelector.length==this.state.quizData)
+    for (i = 0; i < 11; i ++) {
+        if (!this.state.idSelector.includes(y)) {
+            this.setState({idSelector: [...this.state.idSelector, y]});
+        } else {console.log('yo')}
+    }
+}
 
   render() {
     return (
@@ -42,3 +49,8 @@ export default class MainContainer extends Component {
     );
   }
 }
+
+
+
+// question.id.num === this.state.idSelector.slice(-1) {then render the question }
+
