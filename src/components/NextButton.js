@@ -4,7 +4,7 @@ export default function NextButton(props) {
     const x = Math.floor(Math.random()*(props.quizData.length))
     return (
         <div>
-            <button onClick = {()=>{
+            <button className = "Next" onClick = {()=>{
                 if (props.usedQuestions?.length < 11){
                     props.setQuestion(x)}
                     else {
