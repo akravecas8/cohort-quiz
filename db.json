@@ -2,14 +2,14 @@
     "Questions": [
       {
         "id": 1,
-        "question": "Who is most likely to name their variable 'Pizza'?",
+        "question": "Who names their variables 'Pizza'?",
         "answers": ["David", "Sean", "Eni", "Adam"],
         "correctanswer": "David"
       },
       {
         "id": 2,
         "question": "Who went to nursing school?",
-        "answers": ["Shiraf", "Eni", "Laura", "Marcus"],
+        "answers": ["Menhaj", "Eni", "Laura", "Marcus"],
         "correctanswer": "Eni"
       },
       {
@@ -20,31 +20,31 @@
       },
       {
         "id": 4,
-        "question": "Who starts questions with 'Real quick...?'",
+        "question": "Who is the best at cappuccino foam art",
         "answers": ["David", "Alex", "Eni", "James"],
         "correctanswer": "James"
       },
       {
         "id": 5,
-        "question": "Who likes animae more than Adam?",
-        "answers": ["Marcus", "Sean", "Brenna", "Shiraf"],
+        "question": "Who likes dark animae?",
+        "answers": ["Marcus", "Sean", "Brenna", "Menhaj"],
         "correctanswer": "Marcus"
       },
       {
         "id": 6,
         "question": "Who is learning Arabic?",
-        "answers": ["Shiraf", "Laura", "Eni", "David"],
+        "answers": ["Menhaj", "Laura", "Eni", "David"],
         "correctanswer": "Laura"
       },
       {
         "id": 7,
-        "question": "Who recently moved and lost their internet?",
-        "answers": ["Marcus", "James", "Shiraf", "Amy"],
-        "correctanswer": "Shiraf"
+        "question": "Who recently moved?",
+        "answers": ["Marcus", "James", "Menhaj", "Amy"],
+        "correctanswer": "Menhaj"
       },
       {
         "id": 8,
-        "question": "Who cost Alex money with bad (HORRIBLE!!!) stock advice?",
+        "question": "Who invested in EEENF?",
         "answers": ["David", "Amy", "Brenna", "Sean"],
         "correctanswer": "Sean"
       },
@@ -57,13 +57,13 @@
       {
         "id": 10,
         "question": "Who asks too many questions?",
-        "answers": ["Shiraf", "Alex", "James", "Marcus"],
+        "answers": ["Menhaj", "Alex", "James", "Marcus"],
         "correctanswer": "Alex"
       },
       {
         "id": 11,
         "question": "Who got engaged in Freiburg, Germany?",
-        "answers": ["Eni", "Brenna", "Amy", "Shiraf"],
+        "answers": ["Eni", "Brenna", "Amy", "Menhaj"],
         "correctanswer": "Amy"
       }
     ]
