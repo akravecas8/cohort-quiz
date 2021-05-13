@@ -8,6 +8,7 @@ const Question = (props) => {
   // console.log(props);
   
   console.log(props.question?.correctanswer)
+  console.log(props.question?.answers)
 
   return (
     <Fragment>

@@ -63,7 +63,7 @@
       {
         "id": 11,
         "question": "Who got engaged in Freiburg, Germany?",
-        "answer1": ["Eni", "Brenna", "Amy", "Shiraf"],
+        "answers": ["Eni", "Brenna", "Amy", "Shiraf"],
         "correctanswer": "Amy"
       }
     ]
