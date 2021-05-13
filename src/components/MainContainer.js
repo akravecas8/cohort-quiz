@@ -20,7 +20,6 @@ export default class MainContainer extends Component {
     fetch("http://localhost:3000/Questions")
       .then((r) => r.json())
       .then((quizData) => this.setState({ quizData: quizData }))
-      // .then(console.log);
   }
 
 

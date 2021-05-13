@@ -2,12 +2,8 @@ import React, { Fragment } from "react";
 // import Answer from "./Answer";
 
 const Question = (props) => {
-  // const question = props.question.question;
-  // const answers = props.question.answers;
-  // const correctanswer = props.question.correctanswer;
-  // console.log(props);
-  
-  console.log(props.question?.correctanswer)
+ 
+  console.log(props.question)
   console.log(props.question?.answers)
 
   return (
