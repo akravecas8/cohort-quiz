@@ -11,10 +11,12 @@ const QuestionContainer = (props) => {
   return (
     <Fragment>
       <div className="question-container">
-      <Question question = {startMe} />
+      <Question key = {props.question.id} question = {startMe} setCorrect = {props.setCorrect}/>
       </div>
     </Fragment>
   );
 };
 
 export default QuestionContainer;
+
+//hi
