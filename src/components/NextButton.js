@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function NextButton() {
-    const x = Math.floor(Math.random()*11)
-    console.log(x)
+export default function NextButton(props) {
+    const x = Math.floor(Math.random()*(props.quizData.length))
+    // console.log(props.quizData.length)
     return (
         <div>
-            <button>Next</button>
+            <button onClick = {()=>props.setQuestion(x)}>Next</button>
         </div>
     )
 }
