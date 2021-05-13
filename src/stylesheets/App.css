@@ -60,7 +60,8 @@ main
 
 .listy {
   padding: .25em;
-  border: 10 px solid black
+  border: 10 px solid black;
+  list-style-type: none;
 }
 
 #quiztitle {
