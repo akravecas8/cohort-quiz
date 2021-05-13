@@ -2,10 +2,16 @@ import React from 'react'
 
 export default function NextButton(props) {
     const x = Math.floor(Math.random()*(props.quizData.length))
-    // console.log(props.quizData.length)
     return (
         <div>
-            <button onClick = {()=>props.setQuestion(x)}>Next</button>
+            <button onClick = {()=>{
+                if (props.usedQuestions?.length < 11){
+                    props.setQuestion(x)}
+                    else {
+                        alert(`You scored ${props.score} points`)
+                    }
+                
+                }}>Next</button>
         </div>
     )
 }
