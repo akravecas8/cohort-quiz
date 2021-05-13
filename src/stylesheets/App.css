@@ -14,15 +14,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body {
+  background-image: linear-gradient(#1eae98, #ffffc7 ,#a9f1df );
+  
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4ca1a3;
   min-height: 11vh;
   display: flex;
   padding-left: 1em;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
@@ -40,32 +44,62 @@
 main
 
 .questholder {
-  height: 500 px;
-  width: 500 px;
-  background-color: black;
+  height: 800 px;
+  width: 800 px;
+  
+ 
 }
 
 .question {
-  height: 400 px;
-  width: 400 px;
-  background-color: lightskyblue;
+  height: 550 px;
+  width: 550 px;
+  background-color: #1eae98;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .answers {
   height:400 px;
   width: 400 px;
   text-align: left;
-  background-color: lightslategrey;
+  background-color: #a9f1df;
+  padding: 25px;
 }
 
 .listy {
   padding: .25em;
-  border: 10 px solid black;
   list-style-type: none;
+  background-color: #1eae98;
+  margin-right: 5em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px #a5e1ad;
+  border-radius: 25px;
+  text-align: center;
+  
+}
+.listy:hover {
+  background-color: #a9f1df;
+  transition: .5s;
+  transform: translate(10px,5px); 
+  
 }
 
 #quiztitle {
   color: lightgray;
   padding: 1em;
-  text-align: right;
+  text-align: center;
+}
+
+.Next {
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px #233e8b;
+  background-color: #1eae98;
+  margin-left: 400px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.Next:hover {
+  background-color: #a9f1df;
+  transition: .5s;
 }

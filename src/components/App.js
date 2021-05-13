@@ -10,6 +10,9 @@ function App() {
         <span id = "quiztitle">THE COHORT QUIZ</span>     
       </header>
       <MainContainer />
+    
+
+      
     </div>
   );
 }

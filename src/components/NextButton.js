@@ -5,7 +5,7 @@ export default function NextButton(props) {
     // console.log(props.quizData.length)
     return (
         <div>
-            <button onClick = {()=>props.setQuestion(x)}>Next</button>
+            <button className="Next" onClick = {()=>props.setQuestion(x)}>Next</button>
         </div>
     )
 }
