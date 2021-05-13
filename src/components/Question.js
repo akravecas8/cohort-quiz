@@ -7,7 +7,7 @@ const Question = (props) => {
   // const correctanswer = props.question.correctanswer;
   // console.log(props);
   
-  console.log(props.question)
+  console.log(props.question?.correctanswer)
 
   return (
     <Fragment>
@@ -15,7 +15,7 @@ const Question = (props) => {
        <div className="question">{props.question?.question}</div >
 
         <div className="answers">
-          {props.question?.answers.map((answer, idx) => (<ul><li className = "listy"><p key={idx} onClick={() => answer === props.correctanswer ? props.setCorrect() : ""}>{answer}</p></li></ul>))}
+          {props.question?.answers.map((answer, idx) => (<ul><li className = "listy"><p key={idx} onClick={() => answer === props.question?.correctanswer ? props?.setCorrect() : ""}>{answer}</p></li></ul>))}
         </div>  
       </div>
       

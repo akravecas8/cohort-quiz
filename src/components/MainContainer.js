@@ -39,18 +39,6 @@ export default class MainContainer extends Component {
     this.setQuestion(z)
   }
 
-//   setRandomQuestion = () => {
-//     const y = Math.floor(Math.random()*this.state.quizData.length)
-//     let i = 0;
-//     if (this.state.idSelector.length==this.state.quizData)
-//     for (i = 0; i < 11; i ++) {
-//         if (!this.state.idSelector.includes(y)) {
-//             this.setState({idSelector: [...this.state.idSelector, y]});
-//         } else {console.log('yo')}
-//     }
-// }
-
-
   render() {
     console.log(this.state.question)
     console.log(this.state.usedQuestions)
@@ -60,7 +48,7 @@ export default class MainContainer extends Component {
         <Profile/>
         <p>This is a quiz</p>
         <div className = "test">
-        <QuestionContainer question = {this.state.question} quizData = {this.state.quizData} usedQuestions = {this.state.usedQuestions}/>
+        <QuestionContainer question = {this.state.question} quizData = {this.state.quizData} usedQuestions = {this.state.usedQuestions} setCorrect = {this.setCorrect}/>
         </div>
         <div className ="button">
         <NextButton quizData = {this.state.quizData} setQuestion = {this.setQuestion}/>
