@@ -4,6 +4,7 @@ import Question from "./Question";
 const QuestionContainer = (props) => {
   // const quizData = props.quizData;
   // const id = props.id;
+  console.log('yo')
  
   const randomNum = Math.floor(Math.random()*props.quizData.length)
   const startMe = props.usedQuestions.length === 0 ? props.quizData[randomNum] : props.question[0]
@@ -11,7 +12,7 @@ const QuestionContainer = (props) => {
   return (
     <Fragment>
       <div className="question-container">
-      <Question id = {props.question.id} question = {startMe} setCorrect = {props.setCorrect}/>
+      <Question key = {props.question.id} question = {startMe} setCorrect = {props.setCorrect} />
       </div>
     </Fragment>
   );

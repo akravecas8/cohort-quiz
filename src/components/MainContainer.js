@@ -38,6 +38,7 @@ export default class MainContainer extends Component {
     this.setQuestion(z)
   }
 
+
   render() {
     console.log(this.state.question)
     console.log(this.state.usedQuestions)
@@ -50,7 +51,7 @@ export default class MainContainer extends Component {
         <QuestionContainer question = {this.state.question} quizData = {this.state.quizData} usedQuestions = {this.state.usedQuestions} setCorrect = {this.setCorrect}/>
         </div>
         <div className ="button">
-        <NextButton quizData = {this.state.quizData} setQuestion = {this.setQuestion}/>
+        <NextButton quizData = {this.state.quizData} setQuestion = {this.setQuestion} usedQuestions = {this.state.usedQuestions} score = {this.state.score}/>
           </div>
       </div>
     );
