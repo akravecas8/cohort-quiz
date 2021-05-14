@@ -3,6 +3,8 @@ import Profile from "./Profile";
 import NextButton from "./NextButton";
 import QuestionContainer from "./QuestionContainer"
 
+
+
 export default class MainContainer extends Component {
   state = {
     id: 1,
@@ -16,10 +18,12 @@ export default class MainContainer extends Component {
     correct: false,
   };
 
+
   componentDidMount() {
     fetch("http://localhost:3000/Questions")
       .then((r) => r.json())
-      .then((quizData) => this.setState({ quizData: quizData }))
+      .then((quizData) => {const x = Math.floor(Math.random()*10);
+        this.setState({ quizData: quizData, question: quizData[x], usedQuestions: [quizData[x]]})})
   }
 
 
@@ -29,8 +33,8 @@ export default class MainContainer extends Component {
 
   setQuestion = (num) => {
     const x = this.state.quizData.splice(num,1)
-    this.state.usedQuestions.includes(x) ? this.getNewRandNum() : this.setState({question: x, usedQuestions: [...this.state.usedQuestions, x]
-    })
+    console.log(this.state.usedQuestions)
+    this.state.usedQuestions.includes(x) ? this.getNewRandNum() : this.setState({question: x, usedQuestions: [...this.state.usedQuestions, x]})
   }
 
   getNewRandNum = () => {
@@ -43,16 +47,12 @@ export default class MainContainer extends Component {
     console.log(this.state.question)
     console.log(this.state.usedQuestions)
 
+
     return (
       <div className = "maincont">
-        <Profile/>
-        <p>This is a quiz</p>
         <div className = "test">
-        <QuestionContainer question = {this.state.question} quizData = {this.state.quizData} usedQuestions = {this.state.usedQuestions} setCorrect = {this.setCorrect}/>
+        <QuestionContainer question = {this.state.question} quizData = {this.state.quizData} usedQuestions = {this.state.usedQuestions} setCorrect = {this.setCorrect} setQuestion = {this.setQuestion} />
         </div>
-        <div className ="button">
-        <NextButton quizData = {this.state.quizData} setQuestion = {this.setQuestion} usedQuestions = {this.state.usedQuestions} score = {this.state.score}/>
-          </div>
       </div>
     );
   }

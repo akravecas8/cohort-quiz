@@ -4,7 +4,10 @@ import React, { Fragment } from "react";
 const Question = (props) => {
  
   console.log(props.question)
+  console.log(props.question?.question)
   console.log(props.question?.answers)
+  console.log(props.usedQuestions?.length)
+  const x = Math.floor(Math.random()*(props.quizData?.length))
 
   return (
     <Fragment>
@@ -12,7 +15,16 @@ const Question = (props) => {
        <div className="question">{props.question?.question}</div >
 
         <div className="answers">
-          {props.question?.answers.map((answer, idx) => (<ul><li className = "listy"><p key={idx} onClick={() => answer === props.question?.correctanswer ? props?.setCorrect() : ""}>{answer}</p></li></ul>))}
+          {props.question?.answers.map((answer, idx) => (<ul><li className = "listy"><p key={idx} 
+          onClick={() => {answer === props.question?.correctanswer  ? props?.setCorrect(): console.log('gooooooooo');
+            props.setQuestion(x);
+            console.log('clicked')
+          }
+            
+
+            
+            
+            }>{answer}</p></li></ul>))}
         </div>  
       </div>
       

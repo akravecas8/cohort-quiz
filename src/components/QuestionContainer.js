@@ -7,12 +7,12 @@ const QuestionContainer = (props) => {
   console.log('yo')
  
   const randomNum = Math.floor(Math.random()*props.quizData.length)
-  const startMe = props.usedQuestions.length === 0 ? props.quizData[randomNum] : props.question[0]
+  
 
   return (
     <Fragment>
       <div className="question-container">
-      <Question key = {props.question.id} question = {startMe} setCorrect = {props.setCorrect} />
+      <Question key = {props.question.id} question = {props.quizData[randomNum]} setCorrect = {props.setCorrect} setQuestion = {props.setQuestion} />
       </div>
     </Fragment>
   );
