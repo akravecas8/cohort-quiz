@@ -24,8 +24,10 @@ export default class MainContainer extends Component {
     fetch("http://localhost:3000/Questions")
       .then((r) => r.json())
       .then((quizData) => {const x = Math.floor(Math.random()*10);
-        this.setState({ quizData: quizData, question: quizData[x], usedQuestions: [[quizData[x]]]})})
-  }
+        this.setState({ quizData: quizData})})
+      .then(()=> this.setState({
+        question: this.state.quizData[Math.floor(Math.random()*10)]})
+      )}
 
 
   setCorrect = () => {
@@ -35,10 +37,10 @@ export default class MainContainer extends Component {
   setQuestion = (num) => {
     console.log(num)
     const x = this.state.quizData.splice(num,1)
-    console.log(x[0].id)
-    console.log(this.state.usedQuestions.includes(x))
-    console.log(...this.state.usedQuestions)
-    this.state.usedQuestions.includes(x) ? this.getNewRandNum() : this.setState({question: x, usedQuestions: [...this.state.usedQuestions, x]})
+    const z = [...this.state.usedQuestions]
+    const w = z.push(x)
+    console.log(z)
+    this.state.usedQuestions.includes(x) ? this.getNewRandNum() : this.setState({question: x, usedQuestions: z})
   }
 
   getNewRandNum = () => {
@@ -51,6 +53,7 @@ export default class MainContainer extends Component {
     console.log(this.state.question)
     console.log(this.state.usedQuestions)
     const x = Math.floor(Math.random()*10)
+    console.log(this.state)
 
     return (
       <div className = "maincont">
